@@ -17,7 +17,9 @@ const toast = document.querySelector(".toast");
 
 
 //only 3000 port allowed
-const host = "https://innShare.herokuapp.com/";
+//const host = "https://innShare.herokuapp.com/";
+const host = "http://localhost:3000/";
+
 const uploadURL = `${host}api/files`;
 const emailURL = `${host}api/files/send`;
 
@@ -116,7 +118,7 @@ const onUploadSuccess = ({ file: url }) => {
     fileURLinput.value = url;
 };
 
-const resetFIleInput = () =>{
+const resetFIleInput = () => {
     fileInput.value = "";
 }
 
